@@ -32,8 +32,7 @@ class RunText(SampleBase):
     def run(self):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
-        # font.LoadFont("../../../fonts/9x18B.bdf")
-        font.LoadFont("../../../fonts/BPdots.bdf")
+        font.LoadFont("./BPdots.bdf")
         textColor = graphics.Color(255, 255, 255)
 
         space_width = graphics.DrawText(offscreen_canvas, font, 0, 1, textColor, " ")
